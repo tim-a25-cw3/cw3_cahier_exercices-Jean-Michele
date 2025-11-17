@@ -1,5 +1,26 @@
-{% include "_partials/_header.html" %}
+{% include "_partials/_header.html" with { title: 'Accueil' } %}
 
-<!-- Votre contenu ici -->
+<section class="hero">
+    <div class="wrapper">
+        <div class="hero__media">
+            <img src="assets/images/a31582f6a5e9185683b86c6f07838350730fff85.png" alt="" />
+        </div>
+        <div class="hero__content">
+            <h1>Mon cahier d'exercice</h1>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="wrapper">
+        <h2>Mes premiers laboratoires</h2>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card__media"></div>
+            <div class="card__content"></div>
+        </div>
+    </div>
+</section>
 
 {% include "_partials/_footer.html" %}
