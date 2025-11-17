@@ -10,7 +10,57 @@ h5,
 h6 {
     font-family: var(--font-primary);
     line-height: 1;
+    font-weight: light;
+
+    @media (width <= $breakpoint-md) {
+        font-weight: normal;
+    }
+}
+
+h3 {
+    color: var(--color-white);
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: 300;
+}
+h2 span {
+    font-family: var(--font-secondary);
+    line-height: 1;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+p {
+    font-weight: 200;
+    @media (width <= $breakpoint-md) {
+        font-weight: normal;
+    }
+}
+
+p span {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.tag {
+    color: var(--color-white);
+}
+a {
+    text-transform: uppercase;
+}
+
+.bouton {
     font-weight: bold;
+    color: var(--color-black);
+}
+
+a,
+p {
+    font-family: var(--font-secondary);
 }
 
 h1 {
@@ -38,4 +88,16 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+p {
+    font-size: var(--font-size-p);
+}
+
+a {
+    font-size: var(--font-size-a);
+}
+
+.tag {
+    font-size: var(--font-size-tag);
 }
